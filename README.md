@@ -16,7 +16,7 @@ ronin agents are programs that can be deployed to systems for defensive purposes
 
 1. [Fork It!](https://github.com/ronin-rb/ronin-agent-php/fork)
 2. Clone It!
-3. `cd ronin-exploits`
+3. `cd ronin-agent-php`
 4. `bundle install`
 5. `git checkout -b my_feature`
 6. Code It!
