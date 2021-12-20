@@ -20,6 +20,13 @@ ronin agents are programs that can be deployed to systems for defensive purposes
 * Only uses code in the PHP stdlib.
 * Supports PHP 4 and above.
 
+## Synopsis
+
+```shell
+$ php agent.php
+usage: agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}
+```
+
 ## Development
 
 1. [Fork It!](https://github.com/ronin-rb/ronin-agent-php/fork)
