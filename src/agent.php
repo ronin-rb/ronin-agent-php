@@ -398,15 +398,32 @@ if (isset($_REQUEST['_request']))
 }
 else if (PHP_SAPI === 'cli')
 {
-  // This is running from the command line.  Parse command line arguments and
-  // start the standalone server
-  switch ($argv[1]) {
-  case '--http':
-    $result = start_standalone_http_server($argv[2], $argv[3]);
-    print $result;
-    break;
-  case '--listen':
-  case '--connect':
+  $usage = "usage: agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}";
+
+  if (count($argv) > 1)
+  {
+    // This is running from the command line.  Parse command line arguments and
+    // start the standalone server
+    switch ($argv[1])
+    {
+      case '--http':
+        $result = start_standalone_http_server($argv[2], $argv[3]);
+        print $result;
+        break;
+      case '--listen':
+      case '--connect':
+      case '--help':
+        echo $usage;
+        exit;
+      default:
+        fwrite(STDERR,"unknown option: " . $argv[1] . PHP_EOL);
+        exit(1);
+    }
+  }
+  else
+  {
+    fwrite(STDERR, $usage . PHP_EOL);
+    exit(1);
   }
 }
 else 
