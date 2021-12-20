@@ -11,6 +11,15 @@ ronin-agent-php is a ronin agent written in [PHP].
 ronin agents are programs that can be deployed to systems for defensive purposes
 (ex: telemetry) or offensive purposes (ex: post-exploitation).
 
+## Features
+
+* Uses a JSON RPC protocol
+* Supports TCP server, TCP connect back, and a HTTP server.
+* Allows opening/reading/writing files, controlling processes, executing
+  commands, opening TCP/UDP sockets, querying DNS, etc.
+* Only uses code in the PHP stdlib.
+* Supports PHP 4 and above.
+
 ## Development
 
 1. [Fork It!](https://github.com/ronin-rb/ronin-agent-php/fork)
