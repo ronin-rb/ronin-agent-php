@@ -398,7 +398,7 @@ if (isset($_REQUEST['_request']))
 }
 else if (PHP_SAPI === 'cli')
 {
-  $usage = "usage: agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}";
+  $usage = "usage: php agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}";
 
   if (count($argv) > 1)
   {

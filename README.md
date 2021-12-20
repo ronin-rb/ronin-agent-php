@@ -24,7 +24,7 @@ ronin agents are programs that can be deployed to systems for defensive purposes
 
 ```shell
 $ php agent.php
-usage: agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}
+usage: php agent.php {--http PORT [HOST] | --listen PORT [HOST] | --connect HOST PORT}
 ```
 
 ## Development
