@@ -3,7 +3,6 @@
 * [Source](https://github.com/ronin-rb/ronin-agent-php)
 * [Issues](https://github.com/ronin-rb/ronin-agent-php/issues)
 * [Discord](https://discord.gg/6WAb3PsVX9) |
-  [Twitter](https://twitter.com/ronin_rb) |
   [Mastodon](https://infosec.exchange/@ronin_rb)
 
 ronin-agent-php is a ronin agent written in [PHP].
